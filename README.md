@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Axis Tutors: Premier EdTech Platform 🚀
+![Axis Tutors Premium Layout](https://img.shields.io/badge/UI-Premium_Forest_Green-1A3B2B?style=for-the-badge) ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-## Getting Started
+Axis Tutors is an elite, high-performance marketplace connecting ambitious students across Pakistan with rigidly verified local and international educators. 
 
-First, run the development server:
+Designed with a heavy focus on luxury branding aesthetics, the platform completely steps away from traditional chaotic edutainment websites. It utilizes an ultra-premium **Dark Green (`#1A3B2B`)**, **Light Green (`#9FD0AA`)**, and **Warm Beige (`#F7F5F0`)** identity, governed natively by modern CSS Variables and executed beautifully through `Outfit` and `Inter` typography grids.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Core Features & Aesthetics
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### The Grand UI Framework
+- **Split-Pane Authentication Flow**: A revolutionary 2-column aesthetic for Login/Registration, delivering deep brand immersion on the left while cleanly rendering heavily padded forms on the right.
+- **Glassmorphic Data Floating**: Extensive use of `backdrop-filter: blur` styling completely replaces hard borders, resulting in floating dashboards and highly elevated navigation layers.
+- **Dynamic CSS Geometric Backing**: High-end orbital shapes and blurred abstract geometries (`var(--primary)` filtering) have entirely replaced cheap vectors and heavy stock imagery, maximizing layout scale.
+- **Micro-Animations**: All primary components natively use heavily tuned `card-hover` CSS transform lifts (`translate-Y: -4px`) to respond instantly and fluidly.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### The Ecosystem Engines
+- **Surgical Search**: Realize deep filtering of tutors based upon metrics (Price, Location, Subject matching, Verified reviews). Filter sidebars scroll smoothly while remaining sticky to the viewport. 
+- **Calculator Modules**: Built-in interactive financial slide-calculator inside `Become a Tutor` predicting scalable monthly income explicitly customized under dark mode UI principles.
+- **Multi-Portal Dashboards**: Segmented, distinct routing spaces isolating **Tutor Dashboards**, **Parent Oversight Nodes**, and **Student Learning Centers**, completely ensuring structural security.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
+- **Framework**: `Next.js 14` (App Router) 
+- **Styling**: Vanilla `CSS` Variables paired selectively with `Tailwind`.
+- **Database / Auth**: `Supabase` (Secure Auth & Edge Functions).
+- **Icons**: `Lucide React` configured entirely to `strokeWidth: 1.5` for sharp, high-end scaling. 
+- **Fonts**: `Outfit` (Primary Display Headers) / `Inter` (Data Readability).
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Setup & Local Execution
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ensure that your `env` keys are localized correctly. **All `.env` strings are intentionally Git-Ignored for explicit infrastructure security.**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+2. **Environment Synchronization**
+   Create a `.env.local` inside the root and configure Supabase keys:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Deploy Development Architecture**
+   ```bash
+   npm run dev
+   ```
+   Navigate to `localhost:3000` to witness the premium UI instantly.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛡 Trust & Safety Core
+Axis Tutors operates on rigid moderation. Student-Tutor chat is instantly established only upon explicit booking, completely eliminating unsolicited approaches. All structural parents hold absolute, read-only oversight properties across session transactions.
