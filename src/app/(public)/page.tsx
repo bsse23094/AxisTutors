@@ -360,6 +360,28 @@ export default function HomePage() {
             grid-template-columns: 1fr !important;
             gap: 2rem !important;
           }
+          
+          /* Hide decorative floating elements on mobile to prevent overflow and simplify layout */
+          .animate-fade-in, .animate-slide-up {
+            display: none !important;
+          }
+
+          /* Ensure main center floating card fits the screen */
+          .card[style*='position: absolute'] {
+            position: relative !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            top: auto !important;
+            left: auto !important;
+            transform: none !important;
+            margin: 0 auto;
+          }
+          
+          /* Main hero layout adjustment */
+          div[style*='height: 500px'] {
+            height: auto !important;
+            padding: 2rem 0;
+          }
         }
       `}</style>
     </>

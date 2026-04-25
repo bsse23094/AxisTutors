@@ -607,6 +607,43 @@ p {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  /* Override inline grid column definitions specifically targeting 1fr 1fr or minmax configurations */
+  [style*="grid-template-columns: 1fr 1fr"],
+  [style*="grid-template-columns:1fr 1fr"],
+  [style*="grid-template-columns: 2fr 1fr"],
+  [style*="grid-template-columns: 1fr 2fr"],
+  [style*="grid-template-columns: 3fr 1fr"],
+  [style*="grid-template-columns: 1fr 3fr"],
+  [style*="gridTemplateColumns: '1fr 1fr'"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Override fixed max-widths on forms and auth containers */
+  [style*="maxWidth: '480px'"],
+  [style*="maxWidth: '440px'"],
+  [style*="maxWidth: '520px'"],
+  [style*="maxWidth: '560px'"],
+  [style*="maxWidth: '400px'"] {
+    max-width: 100% !important;
+  }
+
+  /* Make generic inputs and selects full width inside forms */
+  form input:not([type="checkbox"]):not([type="radio"]),
+  form select,
+  form textarea {
+    width: 100% !important;
+  }
+
+  /* Optimize padding for mobile cards and sections */
+  .card, form {
+    padding: 1.25rem !important;
+  }
+  
+  .auth-main {
+    padding: 1rem 0.5rem !important;
+  }
+
+  /* Portal sidebar adjustments */
   .sidebar {
     top: 0.5rem;
     left: 0.5rem;
