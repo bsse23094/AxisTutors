@@ -169,7 +169,7 @@ export default function ParentRegisterPage() {
               <p className="helper-text">This is the number your child used to reference their parent</p>
               {accountForm.formState.errors.phone && <p className="error-text">{accountForm.formState.errors.phone.message}</p>}
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="label">City</label>
                 <input {...accountForm.register('city')} className={`input ${accountForm.formState.errors.city ? 'input-error' : ''}`} placeholder="e.g. Lahore" />

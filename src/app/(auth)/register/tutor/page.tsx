@@ -222,7 +222,7 @@ export default function TutorRegisterPage() {
               <textarea {...personalForm.register('bio')} className={`input ${personalForm.formState.errors.bio ? 'input-error' : ''}`} rows={4} placeholder="Tell students about yourself (min 100 characters)" style={{ resize: 'vertical' }} />
               {personalForm.formState.errors.bio && <p className="error-text">{personalForm.formState.errors.bio.message}</p>}
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="label">Experience (Years)</label>
                 <input {...personalForm.register('experience_years')} type="number" min="0" className={`input ${personalForm.formState.errors.experience_years ? 'input-error' : ''}`} />
@@ -253,7 +253,7 @@ export default function TutorRegisterPage() {
               <label className="label">Street Address (Optional)</label>
               <input {...locationForm.register('street_address')} className="input" placeholder="House #, Street, Area" />
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="label">City</label>
                 <input {...locationForm.register('city')} className={`input ${locationForm.formState.errors.city ? 'input-error' : ''}`} placeholder="e.g. Lahore" />

@@ -83,7 +83,7 @@ export default function HomePage() {
     <>
       {/* 1. ULTRA PREMIUM HERO SECTION */}
       <section style={{ paddingTop: '6rem', paddingBottom: '6rem', position: 'relative', overflow: 'hidden' }}>
-        <div className="container" style={{ display: 'grid', gap: '4rem', alignItems: 'center', gridTemplateColumns: 'minmax(0, 1.15fr) minmax(0, 0.85fr)' }}>
+        <div className="container grid md:grid-cols-[1.15fr_0.85fr] items-center gap-12 md:gap-16">
           {/* LEFT: Copy & Search */}
           <div style={{ zIndex: 10 }}>
             <div style={{ 
@@ -165,7 +165,7 @@ export default function HomePage() {
           </div>
 
           {/* RIGHT: Floating UI Cards */}
-          <div style={{ position: 'relative', height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div className="hidden md:flex relative h-[500px] items-center justify-center">
             
             {/* Background Blob */}
             <div style={{
@@ -354,36 +354,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <style>{`
-        @media (max-width: 980px) {
-          .container > div[style*='grid-template-columns: minmax'] {
-            grid-template-columns: 1fr !important;
-            gap: 2rem !important;
-          }
-          
-          /* Hide decorative floating elements on mobile to prevent overflow and simplify layout */
-          .animate-fade-in, .animate-slide-up {
-            display: none !important;
-          }
 
-          /* Ensure main center floating card fits the screen */
-          .card[style*='position: absolute'] {
-            position: relative !important;
-            width: 100% !important;
-            max-width: 100% !important;
-            top: auto !important;
-            left: auto !important;
-            transform: none !important;
-            margin: 0 auto;
-          }
-          
-          /* Main hero layout adjustment */
-          div[style*='height: 500px'] {
-            height: auto !important;
-            padding: 2rem 0;
-          }
-        }
-      `}</style>
     </>
   )
 }

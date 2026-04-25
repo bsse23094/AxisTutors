@@ -273,7 +273,7 @@ export default function StudentRegisterPage() {
               <label className="label" htmlFor="street">Street Address (Optional)</label>
               <input {...locationForm.register('street_address')} id="street" className="input" placeholder="House #, Street, Area" />
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="label" htmlFor="city">City</label>
                 <input {...locationForm.register('city')} id="city" className={`input ${locationForm.formState.errors.city ? 'input-error' : ''}`} placeholder="e.g. Lahore" />
@@ -288,7 +288,7 @@ export default function StudentRegisterPage() {
                 {locationForm.formState.errors.province && <p className="error-text">{locationForm.formState.errors.province.message}</p>}
               </div>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="label">Country</label>
                 <input {...locationForm.register('country')} className="input" disabled value="Pakistan" />
