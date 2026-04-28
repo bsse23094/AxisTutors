@@ -78,7 +78,7 @@ export default function FindTutorPage() {
                 <option>English</option>
                 <option>Computer Science</option>
                 <option>Economics</option>
-                <option>Urdu</option>
+                <option>Law</option>
               </select>
             </div>
 
