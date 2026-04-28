@@ -36,7 +36,7 @@ export default function BecomeATutorPage() {
               <span style={{ color: 'var(--primary-dark)' }}>Earn from Home.</span>
             </h1>
             <p style={{ fontSize: '1.15rem', color: 'var(--text-secondary)', maxWidth: '560px', margin: '0 auto 2.5rem', lineHeight: 1.6 }}>
-              Join Pakistan's fastest-growing premium tutoring platform. Set your exact rates, choose your subjects, and scale your income instantly.
+              Join World's fastest-growing premium tutoring platform. Set your exact rates, choose your subjects, and scale your income instantly.
             </p>
             <Link href="/register/tutor" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
               Apply Now <ArrowRight size={18} />
@@ -71,8 +71,8 @@ export default function BecomeATutorPage() {
                 style={{ width: '100%', accentColor: 'var(--primary-dark)' }} />
             </div>
             <div style={{ marginBottom: '2.5rem' }}>
-              <label className="label" style={{ marginBottom: '0.5rem' }}>Hourly rate: <strong>PKR {hourlyRate.toLocaleString()}</strong></label>
-              <input type="range" min="500" max="5000" step="100" value={hourlyRate} onChange={e => setHourlyRate(Number(e.target.value))}
+              <label className="label" style={{ marginBottom: '0.5rem' }}>Hourly rate: <strong>CAD {hourlyRate.toLocaleString()}</strong></label>
+              <input type="range" min="30" max="200" step="10" value={hourlyRate} onChange={e => setHourlyRate(Number(e.target.value))}
                 style={{ width: '100%', accentColor: 'var(--primary-dark)' }} />
             </div>
             <div style={{
@@ -83,7 +83,7 @@ export default function BecomeATutorPage() {
               border: '1px solid rgba(255,255,255,0.05)'
             }}>
               <div style={{ fontSize: '0.875rem', opacity: 0.9, marginBottom: '0.25rem' }}>Estimated Monthly Earnings</div>
-              <div style={{ fontSize: '2.5rem', fontWeight: 800 }}>PKR {monthlyEarning.toLocaleString()}</div>
+              <div style={{ fontSize: '2.5rem', fontWeight: 800 }}>CAD {monthlyEarning.toLocaleString()}</div>
               <div style={{ fontSize: '0.75rem', opacity: 0.7 }}>After {(commission * 100).toFixed(0)}% platform fee</div>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function BecomeATutorPage() {
               { icon: <Clock size={24} />, title: 'Flexible Hours', desc: 'Set your own schedule and teach when it suits you.', color: 'var(--primary)' },
               { icon: <Users size={24} />, title: 'Verified Students', desc: 'Our platform attracts serious, dedicated students.', color: 'var(--primary-dark)' },
               { icon: <DollarSign size={24} />, title: 'Automatic Payments', desc: 'Get paid automatically after each session.', color: 'var(--secondary-dark)' },
-              { icon: <TrendingUp size={24} />, title: 'Growing Platform', desc: 'Join a rapidly expanding student base across Pakistan.', color: 'var(--accent)' },
+              { icon: <TrendingUp size={24} />, title: 'Growing Platform', desc: 'Join a rapidly expanding student base across the globe.', color: 'var(--accent)' },
             ].map(b => (
               <div key={b.title} className="card" style={{ padding: '1.5rem', textAlign: 'center' }}>
                 <div style={{ width: '3rem', height: '3rem', borderRadius: 'var(--radius)', background: `${b.color}14`, color: b.color, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem' }}>
@@ -122,7 +122,7 @@ export default function BecomeATutorPage() {
               'Degree or strong subject knowledge',
               'Patience and communication skills',
               'Reliable internet connection',
-              'Valid CNIC or passport for verification',
+              'Valid National ID or passport for verification',
               'Willingness to maintain a professional profile',
             ].map(r => (
               <div key={r} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.9375rem', color: 'var(--text-secondary)' }}>

@@ -55,7 +55,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <div style={{ fontWeight: 600, fontSize: '0.9375rem' }}>Email Support</div>
-                <div style={{ fontSize: '0.8125rem', color: 'var(--text-muted)' }}>support@axistutors.pk</div>
+                <div style={{ fontSize: '0.8125rem', color: 'var(--text-muted)' }}>support@axistutors.com</div>
               </div>
             </div>
             <p style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Best for detailed questions and documentation.</p>
@@ -71,14 +71,14 @@ export default function ContactPage() {
                 <div style={{ fontSize: '0.8125rem', color: 'var(--text-muted)' }}>Within 4 hours</div>
               </div>
             </div>
-            <p style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Our support team responds quickly during business hours (9 AM - 9 PM PKT).</p>
+            <p style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Our support team responds quickly during business hours (9 AM - 9 PM EST).</p>
           </div>
 
           <div className="card" style={{ padding: '1.5rem', background: 'linear-gradient(135deg, var(--primary-50), #F0FDFB)' }}>
             <h3 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>Emergency?</h3>
             <p style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)', lineHeight: 1.7 }}>
               If you have an urgent concern about student safety or need immediate assistance, 
-              WhatsApp us at <strong>+92 300 1234567</strong>.
+              WhatsApp us at <strong>+92 320 4307493</strong>.
             </p>
           </div>
         </div>
